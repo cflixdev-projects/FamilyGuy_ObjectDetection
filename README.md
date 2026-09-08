@@ -1,5 +1,11 @@
 # Object Detection using deep learning models on Family Guy characters
 
+
+
+https://github.com/user-attachments/assets/1d946d3b-4ccd-4146-b580-3a0484e62b0a
+
+
+
 > [!IMPORTANT]
 > Given weights only inlcude for characters such as: `Peter, Stewie, Brian & Lois.` Both weights were trained with the `same initial dataset`, but adapted with customized augmentations tailored to their respective architectures such as `YOLO26 & CNN`. 
 
