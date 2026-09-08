@@ -40,7 +40,7 @@ source .venv/bin/activate
 ## Installation
 
 ```bash
-git clone https://github.com/cflixdev-projects/yolov26-family-guy-weights.git
+git clone https://github.com/cflixdev-projects/FamilyGuy_ObjectDetection.git
 cd cflixdev-projects/yolov26-family-guy-weights
 pip install -r requirements.txt
 ```
