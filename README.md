@@ -75,7 +75,7 @@ The dataset was trained both locally and on roboflow. The goal was to evaluate w
 
 ## Conclusion
 ### Training Efficiency
-* **Epoch Reduction:** The local training completed in **25 epochs** compared to Roboflow's **136 epochs**.
+* **Epoch Reduction:** The local training completed in **25 epochs** while achieving overall better results than Roboflow's **136 epochs**.
 * **Speedup Factor:** The local pipeline was **5.44x faster** in terms of required epochs ($\frac{136}{25} = 5.44$).
 * **Resource Savings:** This represents an overall reduction in training overhead of **81.62%** ($1 - \frac{25}{136}$).
 
