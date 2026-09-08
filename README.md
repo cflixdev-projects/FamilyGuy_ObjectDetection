@@ -29,12 +29,12 @@ pip install -r requirements.txt
 **Packages:**
 
 ```bash
-torch
-torchvision
-pillow
-opencv-python
-numpy
-mss
-ultralytics
+pip install torch
+pip install torchvision
+pip install pillow
+pip install opencv-python
+pip install numpy
+pip install mss
+pip install ultralytics
 ```
 
