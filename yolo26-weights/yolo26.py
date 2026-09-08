@@ -8,14 +8,13 @@ import webbrowser as web
 # ========================================================
 # 1. YOLO MODELL LADEN
 # ========================================================
-MODEL_PATH = 'best.pt'  # Pfad zu deiner YOLO-Gewichtsdatei
+MODEL_PATH = 'yolo26-weights/best.pt'  # Pfad zu deiner YOLO-Gewichtsdatei
 
 print("⏳ Lade YOLO-Modell...")
 model = YOLO(MODEL_PATH)
 print("✓ YOLO-Modell erfolgreich geladen und bereit!")
 print(model.names)
 print(model.device)
-
 count = 0
 
 # ========================================================
