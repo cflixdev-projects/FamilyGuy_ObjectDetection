@@ -1,7 +1,8 @@
-# Yolo26 FamilyGuy Weights
+# Object Detection using deep learning models on Family Guy Characters
+## used models: YOLO26 & CNN 
 
 > [!IMPORTANT]
-> Given weights only inlcude for characters such as: `Peter, Stewie, Brian & Lois.` Both weights were traind with the `same dataset` for respective architectures such as yolo26 & cnn. 
+> Given weights only inlcude for characters such as: `Peter, Stewie, Brian & Lois.` Both weights were traind with the `same dataset` for respective architectures such as YOLO26 & cnn. 
 
 ## Weights
 * `[best.pt]` yolo26 architecture
