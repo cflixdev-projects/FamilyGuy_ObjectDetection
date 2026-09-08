@@ -56,6 +56,12 @@ pip install numpy
 pip install mss
 pip install ultralytics
 ```
+
+## Comparison
+### Roboflow vs our training
+[our](https://github.com/cflixdev-projects/yolov26-family-guy-weights/blob/main/training-graphs/results/results.png?raw=true)
+[roboflow]()
+
 ## Architecture
 ### CNN
 > cnn-weights/family_guy_best.pth 
@@ -95,6 +101,10 @@ class FamilyGuyCNN(nn.Module):
 
 ### YOLO26
 > yolo26-weights/best.pt
+```python
+results = model.train(
+data="/content/FamilyGuyDataset-yolo/data.yaml", epochs=25, imgsz=640, batch=16)
+```
 ```python
 DetectionModel(
   (model): Sequential(
