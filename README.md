@@ -58,10 +58,48 @@ pip install ultralytics
 ```
 
 ## Comparison
-### Roboflow vs our training
-[our](https://github.com/cflixdev-projects/yolov26-family-guy-weights/blob/main/training-graphs/results/results.png?raw=true)
-[roboflow]()
+The dataset was trained both locally and on roboflow. The goal was to evaluate which method would gather better results.
 
+### Local training
+![our](/training-graphs/results/results.png)
+
+
+### Roboflow training
+![roboflow](/training-graphs/roboflow/rb-lp.png)
+![roboflow](/training-graphs/roboflow/rb-map.png)
+
+## All Metrics compared
+![dc](/training-graphs/comparison/comparison.png)
+
+## Conclusion
+### Training Efficiency
+* **Epoch Reduction:** The local training completed in **25 epochs** compared to Roboflow's **136 epochs**.
+* **Speedup Factor:** The local pipeline was **5.44x faster** in terms of required epochs ($\frac{136}{25} = 5.44$).
+* **Resource Savings:** This represents an overall reduction in training overhead of **81.62%** ($1 - \frac{25}{136}$).
+
+## Validation examples with confidence
+![val1](training-graphs/results/val-pred/val_batch0_pred.jpg)
+
+![val1](training-graphs/results/val-pred/val_batch2_pred.jpg)
+
+## Confusion Matrix
+![our](/training-graphs/confusion-matrix/confusion_matrix.png)
+
+## Labels
+![our](/training-graphs/Box-metrics/labels/labels.jpg)
+
+## Precision
+![our](/training-graphs/Box-metrics/BoxP_curve.png)
+
+## Recall
+![our](/training-graphs/Box-metrics/BoxR_curve.png)
+
+
+## F1
+![our](/training-graphs/Box-metrics/BoxF1_curve.png)
+
+## Precision-Recall
+![our](/training-graphs/Box-metrics/BoxPR_curve.png)
 ## Architecture
 ### CNN
 > cnn-weights/family_guy_best.pth 
