@@ -77,6 +77,10 @@ The dataset was trained both locally and on roboflow. The goal was to evaluate w
 * **Speedup Factor:** The local pipeline was **5.44x faster** in terms of required epochs ($\frac{136}{25} = 5.44$).
 * **Resource Savings:** This represents an overall reduction in training overhead of **81.62%** ($1 - \frac{25}{136}$).
 
+* **Superior Accuracy:** The local model achieved a higher overall mAP50 of 98.56% compared to Roboflow's 97.0%.
+
+* **Lower Validation Losses:** The local model outperformed Roboflow across all validation error metrics on unseen test data, achieving a lower validation Box Loss (0.91 vs. 1.15), Class Loss (0.46 vs. 0.65), and Object/L1 Loss (0.035 vs. 0.040).
+
 ## Validation examples with confidence
 ![val1](training-graphs/results/val-pred/val_batch0_pred.jpg)
 
